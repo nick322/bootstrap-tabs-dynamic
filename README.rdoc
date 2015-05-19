@@ -36,3 +36,12 @@ You can also add it by an element already defined (maybe as hidden?):
   a.click(function(){
     tab_id = $(this).currentBSTabID()
   })
+  
+== Adding content 
+
+  tabs = $("ul.nav-tabs#TAB");         
+  tabs.addBSTabContent("id_of_tab", "<p>addBSTabContent</p>")   
+  
+== jsfiddle Example 
+
+https://jsfiddle.net/0ua2gzyc/
