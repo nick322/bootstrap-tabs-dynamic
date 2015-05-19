@@ -132,3 +132,12 @@ $.fn.currentBSTabContent = function(){
 $.fn.currentBSTabID = function(){
   return $(this).currentBSTab().find("a").attr("href").substring(1, 999)
 }
+$.fn.addBSTabContent = function(id, content) {
+	ele_with_id = $("#" + id)
+	if (ele_with_id.length == 0) {
+		throw "An element with that ID not exist: '" + id + "'."
+	}
+	
+	ele_with_id.append(content);
+	
+}
